@@ -1,0 +1,24 @@
+@import "tailwindcss";
+
+html,
+body,
+svg {
+  height: 100%;
+}
+
+/* With a touch of CSS for browsers who *
+ * implemented the r Geometry Property. */
+
+@keyframes openYourHeart {
+  from {
+    r: 0;
+  }
+
+  to {
+    r: 60px;
+  }
+}
+
+#myClip circle {
+  animation: openYourHeart 15s infinite;
+}
